@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "id": "litewing",
+      "id": "Litewing",
       "name": "LiteWing",
       "chip": "ESP32S3",
       "version": "3.0.0",
