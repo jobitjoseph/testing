@@ -1,44 +1,23 @@
 {
   "projects": [
     {
-      "id": "deskbuddy",
-      "name": "DeskBuddy",
-      "chip": "ESP32C3",
-      "version": "1.0.0",
-      "description": "DeskBuddy firmware V1.0.0",
+      "id": "litewing",
+      "name": "LiteWing",
+      "chip": "ESP32S3",
+      "version": "3.0.0",
+      "description": "LiteWing version 3.0",
       "baud_options": [
         115200,
         460800,
         921600
       ],
       "baud_default": 921600,
-      "flash_size": "4MB",
+      "flash_size": "8MB",
       "flash": [
         {
           "address": "0x0",
-          "file_id": "deskbuddy.bin",
-          "label": "DeskBuddy Firmware"
-        }
-      ]
-    },
-    {
-      "id": "esp32c3_blinky",
-      "name": "ESP32-C3 Blinky Example",
-      "chip": "ESP32C3",
-      "version": "1.0.0",
-      "description": "A simple LED blinking example for the ESP32-C3. LED on Pin 8.",
-      "baud_options": [
-        115200,
-        460800,
-        921600
-      ],
-      "baud_default": 921600,
-      "flash_size": "4MB",
-      "flash": [
-        {
-          "address": "0x0",
-          "file_id": "esp32c3_blinky.bin",
-          "label": "Blinky Firmware"
+          "file_id": "dLiteWing_3.0.bin",
+          "label": "LiteWing V 3.0"
         }
       ]
     }
