@@ -298,7 +298,7 @@ window.handleFlash = async function () {
     log('success', '══ ✓ Flash complete! ══');
     showToast('Firmware flashed successfully!', 'success');
     
-    document.getElementById('flash-done-actions').style.display = 'block';
+    document.getElementById('flash-done-actions').style.display = 'flex';
     if (document.getElementById('btn-flash-back')) document.getElementById('btn-flash-back').style.display = 'none';
 
   } catch (e) {
@@ -321,7 +321,7 @@ function updateFlashUI() {
   if (eraseBtn) eraseBtn.disabled = STATE.isFlashing;
   if (resetBtn) resetBtn.disabled = STATE.isFlashing;
   if (backBtn) backBtn.style.visibility = STATE.isFlashing ? 'hidden' : 'visible';
-  if (cancelBtn) cancelBtn.style.display = STATE.isFlashing ? 'block' : 'none';
+  if (cancelBtn) cancelBtn.style.display = STATE.isFlashing ? 'inline-flex' : 'none';
 }
 
 // ════════════════════════════════════════════════════

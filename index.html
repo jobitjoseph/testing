@@ -144,7 +144,6 @@
                   <button class="btn btn-outline btn-small" id="btn-erase" onclick="handleErase()" style="padding: 6px; font-size: 12px;">Erase</button>
                   <button class="btn btn-outline btn-small" id="btn-reset" onclick="handleReset()" style="padding: 6px; font-size: 12px;">Reset</button>
                 </div>
-                <button class="btn btn-danger btn-full" id="btn-cancel" onclick="handleCancel()" style="display: none; padding: 10px;">Stop Flashing</button>
               </div>
             </div>
 
@@ -159,14 +158,17 @@
               </div>
             </div>
             
-            <div id="flash-done-actions" style="display: none; margin-top: 16px;">
-              <p class="step-desc" style="font-size: 13px; margin-bottom: 8px;">Ready! You can now reset or disconnect.</p>
-              <button class="btn btn-primary btn-small" onclick="location.reload()">Finish</button>
-            </div>
           </div>
 
           <div class="step-card-footer">
-            <button class="btn btn-outline" id="btn-flash-back" onclick="goToStep(2)">← Back</button>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <button class="btn btn-outline" id="btn-flash-back" onclick="goToStep(2)">← Back</button>
+              <button class="btn btn-danger" id="btn-cancel" onclick="handleCancel()" style="display: none; padding: 0 24px;">Stop Flashing</button>
+              <div id="flash-done-actions" style="display: none; align-items: center; gap: 12px;">
+                <span class="step-desc" style="font-size: 13px; margin: 0;">Ready! You can now reset or disconnect.</span>
+                <button class="btn btn-primary" onclick="location.reload()">Finish</button>
+              </div>
+            </div>
             <div class="footer-status-text">Baud rate: <span id="current-baud-display">921,600</span></div>
           </div>
         </div>
